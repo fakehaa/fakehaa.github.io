@@ -1,0 +1,241 @@
+<html>
+<head>
+<title>Introduction Data Visualization</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mea+Culpa&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=El+Messiri&display=swap" rel="stylesheet">
+<link href="//maxcdn.bootstrapdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+<style>
+  
+     .header{
+        font-family: 'Mea Culpa', cursive;
+        font-size: 60pt;
+        color:white;
+        margin-left: auto;
+        margin-right: auto;
+       background-color: rgba(150, 179, 210, 0.301);
+       text-align: center;
+       font-size: 46pt;
+       display:block; 
+       width:100%; 
+       z-index: 10;
+       display: flex;
+       justify-content: center;
+       padding: 10px  0px  20px 0px;
+    }
+    .navigation_links {
+margin: 10px 0px 0px;
+font-family: 'Grand Hotel', cursive;
+background-color: rgba(150, 179, 210, 0.301);
+}
+
+.navigation_links ul{
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+
+.navigation_links li{
+display: inline;
+}
+
+.navigation_links a {
+font-size: 4vh;
+letter-spacing: 2px;
+}
+
+.navigation_links a:link {
+color: white;
+text-decoration: none;
+}
+
+.navigation_links a:visited {
+color:  white;
+font-weight: thin;
+}
+
+.navigation_links a:hover {
+text-decoration: underline;
+color: rgb(46, 66, 37);
+}
+
+    .header > img{
+        max-width: 100px;
+        vertical-align: middle;
+        background-color: white;
+        border-radius: 0px;
+        margin-right: 30px;
+        display: flex;
+    }
+    body{
+        background-color:powderblue;
+        background-size: cover;
+    }
+   .index_para{
+       height: 60vh;
+       align-self: left;
+       padding-bottom: 100px;
+       display: flex;
+       z-index: 10;
+   }
+   .Inner{
+       max-width: 800px;
+       position: relative;
+       display:block;
+       top: 60%;
+       left: 60%;
+       transform : translate(-60%, -60%);
+       background: rgba(105, 81, 114, 0.137);
+       box-shadow: 0 15px 20px rgba( 0,0,0, .2);
+       padding: 45px;
+       align-self: start;
+       margin-left: 0%;
+   }
+   p{
+       font-size: 15pt;
+       font-family: 'El Messiri', sans-serif;
+       font-weight: bold;
+      
+   }
+   h2{
+    font-family: 'Oooh Baby', cursive;
+
+       font-size: 32pt;
+   }
+   .left{
+       float:left;
+       margin-left: 10px;
+   }
+   .right{
+       float: right;
+       margin-right: 10px;
+   }
+   .con{
+     height: 400px;
+     width: 700px;
+     overflow: hidden;
+     position: relative;
+   }
+   .con .img{
+       height: 100%;
+       width: 100%;
+   }
+   .img img{
+    height: 100%;
+       width: 100%;
+   }
+   .con .slide{
+       position: absolute;
+       top: 50%;
+       transform: translateY(-50%);
+       border: 2px solid white;
+       height: 45px;
+       width: 45px;
+       cursor: pointer;
+
+   }
+   .con .slide:hover{
+       background: rgba(255, 255, 255, 0.2);
+   }
+   .slide span{
+       font-size: 35px;
+       color:black;
+       line-height: 41px;
+   }
+   .con .r{
+       right: 0;
+   }
+  
+
+   
+   #IMGR{
+       float: top;
+       float: left;
+       max-width: 32%;
+       margin-left: 25px;
+       padding-left: 25px;
+       box-shadow: rgba( 0,0,0, .2);
+   } 
+   .fixedbutt{
+       position: fixed;
+       background: rgb(46, 66, 37);
+       width: 250px;
+       height: 80px;
+       line-height: 45px;
+       bottom: 7%;
+       right: 3%;
+       border-radius: 3px;
+       font-family: 'Grand Hotel', cursive;
+       font-size: 20px;
+       text-align: center;
+       box-shadow: 2px 2px 2px;
+       border-radius: 30px;
+
+   }
+   .fixedbutt a:hover{
+       text-decoration: none;
+       color: white;
+   }
+   .fixedbutt a:visited{
+       text-decoration: none;
+       color: white;
+   }
+   .fixedbutt a:link{
+       text-decoration: none;
+   }
+  
+</style>
+</head>
+<body>
+   <div class="header"> 
+        
+             <img src="Camera Roll/BUID.PNG" alt="the uni logo" >
+   
+    <span>
+      data visualization
+       
+    </span>   
+  
+   </div>
+<!--DEFAULT APPEARANCE FOR LINKS ON BIGGER SCREENS-->
+<div id="nav_desktop" class="navigation_links">
+    <ul>
+        <li><a href="" rel="noopener noreferrer">Question 1</a></li>
+        <li><a href="" target="_blank" rel="noopener noreferrer">Question 2</a></li>
+        <li><a href="" target="_blank" rel="noopener noreferrer">Question 3</a></li>
+        
+    </ul>
+</div>
+
+
+<div class="left">
+    <div class="index_para">
+    <div class ="Inner">
+        <h2>ADD IMAGE TO THIS</h2>
+          <p>
+        Our garden is handpicked and handgrown. Each flower is grown with immense care and love,
+        perfect to bring out the true essence of nature. Our garden is fully organic, and the bouquets
+        we provide not only are fresh, but also meaningful. All flowers have a meaning, and we simply
+        convey them! 
+    </p>
+  
+    </div> 
+</div>
+</div>
+
+     
+</body>
+</html>
