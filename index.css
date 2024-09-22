@@ -177,6 +177,9 @@ body {
   .invitation-container {
     padding: 0;
     background-size: cover;
+    margin:0;
+    left:0;
+    top:0;
   }
   .title {
     font-size: 30pt;
@@ -247,7 +250,7 @@ body {
     font-size: 16pt;
   }
   .map-g{
-      max-width:400px !important;
+      max-width:300px !important;
   }
 }
 
