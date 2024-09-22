@@ -87,6 +87,7 @@ body {
 .map a{
     text-decoration: none;
     color: #000000;
+    text-align: center;
 }
 .map a:hover{
     color: rgb(106, 72, 31);
@@ -245,7 +246,7 @@ body {
   .best-wishes-text {
     font-size: 16pt;
   }
-  .map{
+  .map-g{
       max-width:400px !important;
   }
 }
