@@ -171,6 +171,9 @@ body {
     font-size: 18pt;
     color: #fff; 
 }
+.map{
+    max-width: 500px;
+}
 @media only screen and (max-width: 600px) {
   .invitation-container {
     padding: 0;
@@ -243,6 +246,9 @@ body {
   }
   .best-wishes-text {
     font-size: 16pt;
+  }
+  .map{
+      max-width:400px;
   }
 }
 
