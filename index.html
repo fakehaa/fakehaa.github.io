@@ -69,34 +69,6 @@
         <p class="best-wishes-text">Best, Fouzia Shahid & Shahid Saleem Ansari</p>
     </div>
     
-    <script>
-document.querySelector('.rsvp-form').onsubmit = function(event) {
-    event.preventDefault(); // Prevent the default form submission
-
-    const formData = new FormData(this);
-    const data = {};
-    formData.forEach((value, key) => {
-        data[key] = value;
-    });
-
-    fetch('YOUR_WEBHOOK_URL', {
-        method: 'POST',
-        body: JSON.stringify(data),
-        headers: {
-            'Content-Type': 'application/json',
-        },
-    })
-    .then(response => response.json())
-    .then(data => {
-        console.log(data);
-        alert('Thank you for your RSVP!');
-    })
-    .catch((error) => {
-        console.error('Error:', error);
-        alert('There was an error. Please try again later.');
-    });
-};
-</script>
 
 </body>
 
