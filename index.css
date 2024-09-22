@@ -171,5 +171,79 @@ body {
     font-size: 18pt;
     color: #fff; 
 }
+@media only screen and (max-width: 600px) {
+  .invitation-container {
+    padding: 0;
+    background-size: cover;
+  }
+  .title {
+    font-size: 30pt;
+  }
+  .sub {
+    font-size: 16pt;
+  }
+  .name {
+    font-size: 20pt;
+  }
+  .gr {
+    padding-top: 0;
+  }
+  .and {
+    font-size: 18pt;
+  }
+  .desc {
+    font-size: 10pt;
+  }
+  .date p {
+    font-size: 10pt;
+  }
+  .img {
+    max-width: 100%;
+  }
+  #headD {
+    font-size: 14pt;
+  }
+  .content-section {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .map a {
+    font-size: 12pt;
+  }
+  .content-section .date {
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  .footer-section {
+    margin-top: 20px;
+    font-size: 18pt;
+  }
+  .footer-section p {
+    font-size: 12px;
+    padding-top: 10px;
+  }
+  .rsvp-form {
+    margin-top: 10px;
+  }
+  .rsvp-form label {
+    width: auto;
+    margin-bottom: 5px;
+  }
+  .rsvp-form input[type="text"] {
+    width: calc(100% - 100px);
+  }
+  .rsvp-form button {
+    padding: 8px 16px;
+  }
+  .logo-container {
+    padding: 10px;
+  }
+  .logo-image {
+    max-width: 80px;
+  }
+  .best-wishes-text {
+    font-size: 16pt;
+  }
+}
 
 
