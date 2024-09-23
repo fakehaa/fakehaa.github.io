@@ -10,6 +10,10 @@
     font-family: 'mon';
     src: url('fonts/monsieur.ttf');
 }
+@font-face {
+    font-family: 'hey';
+    src: url('fonts/HeyBeauty.otf');
+}
 body {
     margin: 0;
     padding: 0;
@@ -24,9 +28,10 @@ body {
     background-color: #fff;
     padding: 20px;
     
-    background: url('imgs/background_phone.png') no-repeat center center;
+    background: url('imgs/bg_brown.png') no-repeat center center;
     background-size: cover; 
 }
+
 
 .header-section {
     text-align: center;
@@ -39,7 +44,8 @@ body {
 .title{
     font-family: 'mon';
     color: #000000;
-    font-size: 40pt !important;
+    font-size: 20pt !important;
+    font-weight: normal;
     
 }
 .sub{
@@ -87,7 +93,6 @@ body {
 .map a{
     text-decoration: none;
     color: #000000;
-    text-align: center;
 }
 .map a:hover{
     color: rgb(106, 72, 31);
@@ -110,44 +115,55 @@ body {
     font-size: 14pt !important;
 }
 .rsvp-form {
-    margin-top: 20px;
+    margin: 0 auto;  
     text-align: left;
     font-family: 'lora', sans-serif;
     font-weight: bold;
+    display: flex;
+    flex-direction: column;  
+    width: 400px; 
+    margin-top: 20px; 
 }
 
 .rsvp-form label {
     display: inline-block;
-    width: 100px;
+    width: 100%;  
     margin-bottom: 10px;
+    font-size: 14pt;  
 }
 
 .rsvp-form input[type="text"] {
-    width: calc(100% - 110px);
-    padding: 5px;
+    width: 100%;  
+    padding: 10px;  
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
 
+
 .rsvp-form input[type="radio"] {
     margin-right: 5px;
-    margin-left: 20px;
+    margin-left: 0px;  
+    display: inline-block; 
+    
 }
 
 .rsvp-form button {
-    padding: 10px 20px;
+    padding: 20px 50px;
     background-color: rgb(106, 72, 31); 
     color: #fff;
     border: none;
-    border-radius: 4px;
+    border-radius: 30px;
     cursor: pointer;
     font-family: 'lora', sans-serif;
+    font-size: 14pt;
+    align-self: center;  
 }
 
 .rsvp-form button:hover {
     background-color: #C70039; 
 }
+
 .logo-container {
     display: flex;
     align-items: center; 
@@ -164,7 +180,8 @@ body {
 
 .logo-image {
     max-width: 100px; 
-    margin-right: 20px; 
+    align-items: center;
+    justify-content: center;
 }
 
 .best-wishes-text {
@@ -173,85 +190,79 @@ body {
     color: #fff; 
 }
 
-@media only screen and (max-width: 600px) {
-  .invitation-container {
-    padding: 0;
-    background-size: cover;
-    margin:0;
-    left:0;
-    top:0;
-  }
-  .title {
-    font-size: 30pt;
-  }
-  .sub {
-    font-size: 16pt;
-  }
-  .name {
-    font-size: 20pt;
-  }
-  .gr {
-    padding-top: 0;
-  }
-  .and {
-    font-size: 18pt;
-  }
-  .desc {
-    font-size: 10pt;
-  }
-  .date p {
-    font-size: 10pt;
-  }
-  .img {
-    max-width: 100%;
-  }
-  #headD {
-    font-size: 14pt;
-  }
-  .content-section {
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-  .map a {
-    font-size: 12pt;
-  }
-  .content-section .date {
-    margin-top: 20px;
-    font-size: 14px;
-  }
-  .footer-section {
-    margin-top: 20px;
-    font-size: 18pt;
-  }
-  .footer-section p {
-    font-size: 12px;
-    padding-top: 10px;
-  }
-  .rsvp-form {
-    margin-top: 10px;
-  }
-  .rsvp-form label {
-    width: auto;
-    margin-bottom: 5px;
-  }
-  .rsvp-form input[type="text"] {
-    width: calc(100% - 100px);
-  }
-  .rsvp-form button {
-    padding: 8px 16px;
-  }
-  .logo-container {
-    padding: 10px;
-  }
-  .logo-image {
-    max-width: 80px;
-  }
-  .best-wishes-text {
-    font-size: 16pt;
-  }
-  .map-g{
-      max-width:300px !important;
-  }
-}
 
+@media only screen and (max-width: 600px) {
+    .invitation-container {
+      padding: 0;
+      background-size: cover;
+    }
+    .title {
+      font-size: 30pt;
+    }
+    .sub {
+      font-size: 16pt;
+    }
+    .name {
+      font-size: 20pt;
+    }
+    .gr {
+      padding-top: 0;
+    }
+    .and {
+      font-size: 18pt;
+    }
+    .desc {
+      font-size: 10pt;
+    }
+    .date p {
+      font-size: 10pt;
+    }
+    .img {
+      max-width: 100%;
+    }
+    #headD {
+      font-size: 14pt;
+    }
+    .content-section {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    .map a {
+      font-size: 12pt;
+    }
+    .content-section .date {
+      margin-top: 20px;
+      font-size: 14px;
+    }
+    .footer-section {
+      margin-top: 20px;
+      font-size: 18pt;
+    }
+    .footer-section p {
+      font-size: 12px;
+      padding-top: 10px;
+    }
+    .rsvp-form {
+      margin-top: 10px;
+    }
+    .rsvp-form label {
+      width: auto;
+      margin-bottom: 5px;
+    }
+    .rsvp-form input[type="text"] {
+      width: calc(100% - 100px);
+    }
+    .rsvp-form button {
+      padding: 8px 16px;
+    }
+    .logo-container {
+      padding: 10px;
+    }
+    .logo-image {
+      max-width: 80px;
+    }
+    .best-wishes-text {
+      font-size: 16pt;
+    }
+  }
 
