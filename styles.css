@@ -1,0 +1,293 @@
+@font-face {
+    font-family: 'PlayFair';
+    src: url('assets/fonts/PlayfairDisplay.ttf');
+}
+body {
+    background-color: #f6f2ed;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    font-size: 16pt;
+    font-family: 'PlayFair';
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+
+}
+
+.nav .logo {
+    font-size: 12pt;
+    font-weight: bold;
+    font-family: 'PlayFair';
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+    font-family: 'PlayFair';
+    text-decoration: none;
+}
+
+.nav ul li {
+    cursor: pointer;
+    font-weight: bolder;
+    font-family: 'PlayFair';
+    text-decoration: none;
+}
+
+section.content {
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    max-width: 1200px;
+    margin: auto;
+    position: relative;
+    font-family: 'PlayFair';
+}
+
+.image-left {
+    position: relative;
+    display: inline-block;
+}
+
+.image-left::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 110%; 
+    background-color: #865c68; 
+    z-index: -1; 
+    border-radius: 10px; 
+    transform: translate(-100px, 10px); 
+}
+
+.image-left img {
+    max-width: 600px;
+    border-radius: 5px;
+    margin-right: 50px;
+}
+
+.text h1 {
+    font-size: 26pt;
+    margin: 0;
+    font-family: 'PlayFair';
+}
+
+.text p {
+    margin: 20px 0;
+    max-width: 700px;
+    font-size: 12pt;
+    font-family: 'PlayFair';
+}
+
+.btn {
+    display: inline-block;
+    color: black;
+    border: 1px solid black;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 10pt;
+    border-radius: 30px;
+    font-family: 'PlayFair';
+}
+
+.btn:hover {
+    background-color: #865c68;
+    color: #faf9f8;
+}
+.projects{
+    text-align: left;
+    background-color: #f6f2ed;
+    padding: 50px 20px;
+    color: black;
+    font-family: 'PlayFair';
+}
+.heading{
+    font-size: 20pt;
+    margin-bottom: 20px;
+    padding: 0 30px;
+}
+.card-style{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.item{
+    background-color: #865c68;
+    border-radius: 20px;
+    padding: 20px;
+    color: #faf9f8;
+    text-align: center;
+}
+.item img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+
+}
+.item h3{
+    font-size: 14pt;
+    margin-bottom: 10px;
+    font-family: 'PlayFair';
+}
+.item p{
+    font-size: 11pt;
+    margin: 10px;
+    font-family: 'PlayFair';
+}
+.proj-link{
+    display: inline-block;
+    color: black;
+    border: 1px solid black;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 10pt;
+    border-radius: 30px;
+    font-family: 'PlayFair';
+}
+.proj-link:hover{
+    background-color: #925559;
+    color: #faf9f8;
+}
+.extras {
+    background-color: #f6f2ed;
+    padding: 50px 20px;
+    font-family: 'PlayFair';
+}
+
+.extra-heading {
+    text-align: center;
+    font-size: 24pt;
+    margin-bottom: 40px;
+    font-family: 'PlayFair';
+}
+
+.extra-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto 50px;
+    gap: 20px;
+}
+
+.extra-content.reverse {
+    flex-direction: row-reverse;
+}
+
+.extra-text {
+    flex: 1;
+    font-size: 12pt;
+    padding: 20px;
+}
+
+.extra-text h1 {
+    font-size: 18pt;
+    margin-bottom: 15px;
+}
+
+.extra-text p {
+    font-size: 12pt;
+    line-height: 1.6;
+}
+
+.extra-image {
+    flex: 1;
+    position: relative;
+    text-align: center;
+}
+
+.extra-image img {
+    width: auto;
+    max-width: 500px;
+    border-radius: 10px;
+    max-height: 500px;
+}
+
+.extra-image::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 100%;
+    height: 100%;
+    background-color: #865c68;
+    z-index: -1;
+    border-radius: 10px;
+    transform: translate(-20px, -20px);
+}
+
+.contact{
+    text-align: center;
+    background-color: #865c68;
+    padding: 50px 20px;
+    color: #f6f2ed;
+    font-family: 'PlayFair';
+}
+.heading-contact{
+    font-size: 20pt;
+    margin-bottom: 20px;
+    padding: 0 30px;
+}
+.contact-card-style{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+.item-contact{
+    background-color: #865c68;
+    border-radius: 20px;
+    padding: 20px;
+    color: #faf9f8;
+    text-align: center;
+}
+.item-contact img{
+    max-width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.item-contact h3{
+    font-size: 14pt;
+    margin-bottom: 10px;
+    font-family: 'PlayFair';
+}
+.item-contact p{
+    font-size: 11pt;
+    margin: 10px;
+    font-family: 'PlayFair';
+}
+.contact-link{
+    display: inline-block;
+    color: black;
+    border: 1px solid black;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 10pt;
+    border-radius: 30px;
+    font-family: 'PlayFair';
+}
+.contact-link:hover{
+    background-color: #925559;
+    color: #faf9f8;
+}
