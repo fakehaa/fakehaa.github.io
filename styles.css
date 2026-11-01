@@ -344,31 +344,47 @@ section { padding-block: var(--section-gap) 0; }
 .item p { font-size: 0.95rem; margin: 0 0 1rem; }
 .item .btn { margin-top: auto; align-self: flex-start; }
 
-/* ---------- Extras ---------- */
-.extra-content {
+/* ---------- Publications & Writing ---------- */
+.pubs { list-style: none; margin: 0; padding: 0; }
+.pub {
     display: grid;
     grid-template-columns: minmax(0, 1fr);
-    gap: 2rem;
+    gap: 1.5rem;
     align-items: center;
-    margin-bottom: 3.5rem;
+    padding-block: 1.75rem;
+    border-top: 1px solid var(--line);
 }
-@media (min-width: 760px) {
-    .extra-content { grid-template-columns: minmax(0, 3fr) minmax(0, 2fr); gap: 3rem; }
-    .extra-content.reverse .extra-image { order: -1; }
+.pub:first-child { border-top: 0; padding-top: 0; }
+@media (min-width: 640px) {
+    .pub { grid-template-columns: 180px minmax(0, 1fr); gap: 2.25rem; }
 }
-.extra-text h3 { font-size: 1.4rem; }
-.extra-text p { margin: 0; }
-.extra-image { position: relative; justify-self: center; max-width: 340px; }
-.extra-image img { border-radius: 10px; max-height: 420px; width: auto; }
-.extra-image::before {
+.pub-image { position: relative; max-width: 180px; margin-right: 0.6rem; }
+.pub-image img {
+    border-radius: 8px;
+    width: 100%;
+    max-height: 240px;
+    object-fit: contain;
+    background-color: var(--surface);
+}
+.pub-image::before {
     content: '';
     position: absolute;
     inset: 0;
     background-color: var(--accent);
-    border-radius: 10px;
-    transform: translate(0.9rem, 0.9rem);
+    border-radius: 8px;
+    transform: translate(0.6rem, 0.6rem);
     z-index: -1;
 }
+.pub-meta {
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    margin: 0 0 0.3rem;
+}
+.pub-text h3 { font-size: 1.25rem; margin-bottom: 0.4rem; }
+.pub-text p:not(.pub-meta) { margin: 0; max-width: 65ch; }
+.pub-link { display: inline-block; margin-top: 0.5rem; color: var(--accent); font-family: var(--font-display); }
 
 /* ---------- Contact ---------- */
 .contact {
