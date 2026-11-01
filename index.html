@@ -1,185 +1,179 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <link rel="stylesheet" href="styles.css">
-        <title>Fakeha Ansari</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Fakeha Ansari | Analyst at e&amp; · AI, Automation &amp; Data</title>
+        <meta name="description" content="Fakeha Ansari: Analyst at e&amp; (CVM / SMB &amp; Robotics) working on automation, LLM tooling and data/BI. Computer Science graduate (AI concentration) and published author.">
+        <meta name="color-scheme" content="light dark">
+        <meta name="theme-color" content="#f6f2ed">
+        <link rel="canonical" href="https://fakehaa.github.io/">
+
+        <!-- Open Graph / link previews (LinkedIn, WhatsApp, etc.) -->
+        <meta property="og:type" content="profile">
+        <meta property="og:site_name" content="Fakeha Ansari">
+        <meta property="og:title" content="Fakeha Ansari | Analyst at e&amp;">
+        <meta property="og:description" content="Analyst at e&amp; working on automation, LLM tooling and data/BI. CS graduate (AI) and published author.">
+        <meta property="og:url" content="https://fakehaa.github.io/">
+        <meta property="og:image" content="https://fakehaa.github.io/assets/og-image.jpg">
+        <meta property="og:image:width" content="1200">
+        <meta property="og:image:height" content="630">
+        <meta property="og:image:alt" content="Photo of Fakeha Ansari">
+        <meta property="profile:first_name" content="Fakeha">
+        <meta property="profile:last_name" content="Ansari">
+        <meta name="twitter:card" content="summary_large_image">
+
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+        <link rel="preload" href="assets/fonts/PlayfairDisplay.ttf" as="font" type="font/ttf" crossorigin>
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
         <!--header logo and nav links-->
         <header class="nav">
-            <div class="logo">
-                <h1>Fakeha Ansari</h1>
-            </div>    
-            <ul>
-                <li><a href="#About">About me </a></li>
-                <li><a href="#Projects">Projects</a></li>
-                <li><a href="#Extra">Extras</a></li>
-                <li><a href="#Contact">Contact</a></li>
-            </ul>
+            <nav class="container nav-inner" aria-label="Main">
+                <a class="logo" href="#About">Fakeha Ansari</a>
+                <ul>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Projects">Projects</a></li>
+                    <li><a href="#Extra">Extras</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul>
+            </nav>
         </header>
 
-        <section class="content">
+        <main>
+        <section id="About" class="container hero">
             <div class="image-left">
-                <img src="assets/fakeha.jpg">
+                <img src="assets/fakeha-hero.jpg" width="1000" height="903" alt="Fakeha Ansari standing in front of a floral installation by the Dubai waterfront">
             </div>
             <div class="text">
-                <h1 id="About">Hello!</h1>
+                <p class="eyebrow">Hello!</p>
                 <h1>I'm Fakeha Ansari</h1>
-                <p>I am a computer science graduate with a concentration in Artificial Intelligence, 
-                an aspiring game developer, and a published author. My journey has been a blend of creativity and 
-                technical expertise, with experiences ranging from building AI-powered solutions to crafting engaging 
+                <p>I am a computer science graduate with a concentration in Artificial Intelligence,
+                an aspiring game developer, and a published author. My journey has been a blend of creativity and
+                technical expertise, with experiences ranging from building AI-powered solutions to crafting engaging
                 stories as a young adult novelist. </p>
-                <p>Outside of work, I’m a volleyball captain, a runner, and an avid reader, 
-                always seeking inspiration both on the court and in the pages of a great book. With a passion for innovation 
+                <p>Outside of work, I’m a volleyball captain, a runner, and an avid reader,
+                always seeking inspiration both on the court and in the pages of a great book. With a passion for innovation
                 and storytelling, I’m driven to explore new ways to combine technology, creativity, and teamwork in everything I do.
                 </p>
-                <a href="#Projects">
-                    <button class="btn"> View Projects</button>
-                </a>
-
+                <div class="actions">
+                    <a class="btn" href="#Projects">View Projects</a>
+                </div>
             </div>
         </section>
-<!--featured projects section-->
-        <section class="projects">
-            <div class="heading">
-                <h1 id="Projects">Featured Projects</h1>
-            </div>
+
+        <!--featured projects section-->
+        <section id="Projects" class="container projects">
+            <h2 class="section-title">Featured Projects</h2>
             <div class="card-style">
-                <div class="item">
-                    <img src="assets/translate.png">
+                <article class="item on-accent">
+                    <img src="assets/translate.png" alt="ARTEN project screenshot: Arabic-to-English translation and summarisation">
                     <h3>ARTEN</h3>
                     <p>This project is based on NLP for summarization and classification of text from arabic to english. It is made using a transformer based model for summarization and text generation of translated texts!</p>
-                    <a target="_blank" href="https://github.com/fakehaa/ARTEN">
-                        <button class="proj-link">Github Repo</button>
-                    </a>
-                    
-                </div>
-                <div class="item">
-                    <img src="assets/chatbot.png">
+                    <a class="btn" target="_blank" rel="noopener" href="https://github.com/fakehaa/ARTEN">GitHub Repo</a>
+                </article>
+                <article class="item on-accent">
+                    <img src="assets/chatbot.png" alt="Meyda chatbot interface">
                     <h3>Meyda Chatbot</h3>
                     <p>This project was my first commercial project I completed in an Internship at Meydan Free Zone. The chatbot is built using Open AI GPT-3.5-turbo model
-                        to answer questions customers may have regarding setting up a business in Dubai. It also is connected to the CRM which is being used at MFZ and is capable of 
+                        to answer questions customers may have regarding setting up a business in Dubai. It also is connected to the CRM which is being used at MFZ and is capable of
                         collecting leads and optimizing them!
                     </p>
-                
-                </div>
-                <div class="item">
-                    <img src="assets/greenhouse.png">
+                </article>
+                <article class="item on-accent">
+                    <img src="assets/greenhouse.png" alt="Smart Green House plant disease detection">
                     <h3>Smart Green House</h3>
                     <p>This project uses machine learning algorithms and techniques to accurately classify when a plant is sick. This is based on object detection using Yolo models</p>
-                    <a target="_blank" href="https://github.com/ShadyEgypt/Zaka-Project" >
-                        <button class="proj-link">Github Repo</button>
-                    </a>
-                
-                </div>
-                <div class="item">
-                    <img src="assets/System.png">
+                    <a class="btn" target="_blank" rel="noopener" href="https://github.com/ShadyEgypt/Zaka-Project">GitHub Repo</a>
+                </article>
+                <article class="item on-accent">
+                    <img src="assets/System.png" alt="Ready.Set.Eat system diagram">
                     <h3>Ready. Set. Eat!</h3>
                     <p>This project uses machine learning algorithms to recommend you a dish based on items detected using a YOLOv8 model in your pantry!
                         Never again wonder what to eat or make!
                     </p>
-                    <a target="_blank" href="https://github.com/fakehaa/Ready-Set-Eat">
-                        <button class="proj-link">Github Repo</button>
-                    </a>
-                    
-                </div>
+                    <a class="btn" target="_blank" rel="noopener" href="https://github.com/fakehaa/Ready-Set-Eat">GitHub Repo</a>
+                </article>
             </div>
         </section>
-        
-        <!--Extras section!-->
 
-        <section class="extras">
-            <div class="extra-heading">
-                <h1 id="Extra">Extras</h1>
-            </div>
-        
-            <!-- First Extra Section -->
+        <!--Extras section!-->
+        <section id="Extra" class="container extras">
+            <h2 class="section-title">Extras</h2>
+
             <div class="extra-content">
                 <div class="extra-text">
-                    <h1>My journey as an Author!</h1>
+                    <h3>My journey as an Author!</h3>
                     <p>
-                        I love to read, so I tried my hand at writing! I started this journey when I was fresh out of high school with a rough 
-                        storyboard and a dream. I jotted down all possible ideas of how i can get figments of my imagination onto paper, 
-                        create them as living breathing beings through words. I spent about two years in writing and planning, going through 
+                        I love to read, so I tried my hand at writing! I started this journey when I was fresh out of high school with a rough
+                        storyboard and a dream. I jotted down all possible ideas of how i can get figments of my imagination onto paper,
+                        create them as living breathing beings through words. I spent about two years in writing and planning, going through
                         countless changes until I was happy with how Riot and Kinza came to be.
                         Today, I am a internationally published author sharing the story of a hobby with the rest of the world!
                     </p>
                 </div>
                 <div class="extra-image">
-                    <img src="assets/atib.jpg" alt="Author journey">
+                    <img src="assets/atib.jpg" width="500" height="783" alt="Cover of the novel All That's in Between">
                 </div>
             </div>
-        
-            <!-- Second Extra Section (Reversed) -->
+
             <div class="extra-content reverse">
                 <div class="extra-text">
-                    <h1>NILES 2024 IEEE Published Researcher</h1>
+                    <h3>NILES 2024 IEEE Published Researcher</h3>
                     <p>
-                        While I was working towards my degree, I had the chance to collaborate with 4 very talented people and 
-                        work on this project. In this we designed a semi-steering system based on Internet of Things (IoT) for 
-                        better mobility. This was based on object detection 
-                        algorthims such as YOLO and OpenVino for detection of objects that may pose a threat to drivers. 
+                        While I was working towards my degree, I had the chance to collaborate with 4 very talented people and
+                        work on this project. In this we designed a semi-steering system based on Internet of Things (IoT) for
+                        better mobility. This was based on object detection
+                        algorthims such as YOLO and OpenVino for detection of objects that may pose a threat to drivers.
                     </p>
                 </div>
                 <div class="extra-image">
-                    <img src="assets/ieee.png" alt="IEEE Researcher">
+                    <img src="assets/ieee.png" width="799" height="516" alt="IEEE NILES 2024 conference">
                 </div>
             </div>
-        
-            <!-- Third Extra Section -->
+
             <div class="extra-content">
                 <div class="extra-text">
-                    <h1>Connections, BUiD University Magazine</h1>
+                    <h3>Connections, BUiD University Magazine</h3>
                     <p>
-                        In my final year of university, I had the privilege to write an article for my university yearly magazine, 
-                        Connections. After mentally pacing back and forth on what I could possible write on, I decided on exploring 
-                        on creative outlets we use. After all opportunities to unwind in todays age are hard to find and far between. 
-                        As such, I wrote about how we infuse parts of our soul and how we perceive others in artistic outlets. 
-                        Characters as mirrors discusses and explores how even great authors like Charles dickens infuses his work 
-                        with how he sees the world around him. 
+                        In my final year of university, I had the privilege to write an article for my university yearly magazine,
+                        Connections. After mentally pacing back and forth on what I could possible write on, I decided on exploring
+                        on creative outlets we use. After all opportunities to unwind in todays age are hard to find and far between.
+                        As such, I wrote about how we infuse parts of our soul and how we perceive others in artistic outlets.
+                        Characters as mirrors discusses and explores how even great authors like Charles dickens infuses his work
+                        with how he sees the world around him.
                     </p>
                 </div>
                 <div class="extra-image">
-                    <img src="assets/connections.png" alt="University Magazine">
+                    <img src="assets/connections.png" width="655" height="912" alt="Connections, The British University in Dubai magazine">
                 </div>
             </div>
         </section>
-        
+
         <!--Contact section-->
-        <section class="contact">
-            <div class="heading-contact">
-                <h1 id="Contact">Want to connect? Find me here!</h1>
-            </div>
-                <div class="contact-card-style">
+        <section id="Contact" class="contact">
+            <div class="container">
+                <h2 class="section-title">Want to connect? Find me here!</h2>
+                <div class="contact-card-style on-accent">
                     <div class="item-contact">
-                        <img src="assets/linkedin.png">
+                        <img src="assets/linkedin.png" alt="LinkedIn logo" width="48" height="48">
                         <h3>LinkedIn</h3>
-                        <a target="_blank" href="https://www.linkedin.com/in/fakeha-ansari/">
-                            <button class="contact-link">Linkedin</button>
-                        </a>
-                        
+                        <a class="btn" target="_blank" rel="noopener" href="https://www.linkedin.com/in/fakeha-ansari/">LinkedIn</a>
                     </div>
                     <div class="item-contact">
-                        <img src="assets/gmail.jpg">
+                        <img src="assets/gmail.jpg" alt="Email icon" width="48" height="48">
                         <h3>Email</h3>
-                        <a href="mailto:fakeha2002@hotmail.com">
-                            <button class="contact-link">Email</button>
-                        </a>
-                        
+                        <a class="btn" href="mailto:fakeha2002@hotmail.com">Email</a>
                     </div>
                     <div class="item-contact">
-                        <img src="assets/github.png">
+                        <img src="assets/github.png" alt="GitHub logo" width="48" height="48">
                         <h3>GitHub</h3>
-                        <a target="_blank" href="https://github.com/fakehaa">
-                            <button class="contact-link">Github </button>
-                        </a>
-                        
+                        <a class="btn" target="_blank" rel="noopener" href="https://github.com/fakehaa">GitHub</a>
                     </div>
-                    
                 </div>
-
+            </div>
         </section>
-
+        </main>
     </body>
 </html>
