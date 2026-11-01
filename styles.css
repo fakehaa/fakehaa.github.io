@@ -413,4 +413,10 @@ section { padding-block: var(--section-gap) 0; }
     margin: 0 auto 0.75rem;
     border-radius: 10px;
 }
-.item-contact h3 { font-size: 1.2rem; }
+.item-contact h3 { font-size: 1.2rem; margin-bottom: 0.2rem; }
+.contact-detail {
+    font-size: 0.9rem;
+    opacity: 0.9;
+    margin: 0 0 1rem;
+    overflow-wrap: anywhere;
+}
