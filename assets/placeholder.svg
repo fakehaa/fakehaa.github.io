@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 300" role="img" aria-label="Placeholder image">
+  <!-- TODO: placeholder; replace with a real screenshot -->
+  <rect width="480" height="300" fill="#ede3da"/>
+  <rect x="150" y="90" width="180" height="110" rx="10" fill="none" stroke="#865c68" stroke-width="4"/>
+  <circle cx="195" cy="128" r="14" fill="#865c68"/>
+  <path d="M160 190l50-45 35 30 30-22 45 37z" fill="#865c68" opacity="0.7"/>
+  <text x="240" y="240" text-anchor="middle" font-family="Georgia, serif" font-size="20" fill="#865c68">Screenshot coming soon</text>
+</svg>
