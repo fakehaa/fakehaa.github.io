@@ -283,6 +283,41 @@ section { padding-block: var(--section-gap) 0; }
 }
 .tl-earlier strong { color: var(--text); font-family: var(--font-display); }
 
+/* ---------- Skills ---------- */
+.skill-groups {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
+    gap: 1.25rem;
+}
+.skill-group {
+    background-color: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 1.25rem;
+}
+.skill-group h3, .certs h3 { font-size: 1.1rem; margin-bottom: 0.75rem; }
+.chips {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem;
+}
+.chips li {
+    background-color: var(--chip-bg);
+    border-radius: 999px;
+    padding: 0.2rem 0.75rem;
+    font-size: 0.88rem;
+}
+.chips-outline li {
+    background-color: transparent;
+    border: 1px solid var(--accent);
+}
+.certs { margin-top: 1.75rem; }
+.spoken { font-size: 0.92rem; color: var(--muted); margin: 1rem 0 0; }
+.spoken strong { color: var(--text); font-family: var(--font-display); }
+
 /* ---------- Project cards ---------- */
 .card-style {
     display: grid;
