@@ -13,6 +13,7 @@
     --muted: #5d5457;
     --accent: #865c68;
     --accent-hover: #925559;
+    --accent-text: #865c68;
     --on-accent: #faf9f8;
     --line: #e2d8d0;
     --chip-bg: #ece2db;
@@ -35,6 +36,7 @@
         --muted: #b9adb1;
         --accent: #865c68;
         --accent-hover: #a06c7b;
+        --accent-text: #d3a6b2;
         --on-accent: #faf9f8;
         --line: #3a3034;
         --chip-bg: #322a2e;
@@ -222,11 +224,11 @@ section { padding-block: var(--section-gap) 0; }
 }
 .hero .role {
     font-family: var(--font-display);
-    color: var(--accent);
+    color: var(--accent-text);
     font-size: 1.1rem;
     margin: 0.4rem 0 1.25rem;
 }
-@media (prefers-color-scheme: dark) { .hero .role { color: var(--accent-hover); } }
+
 .hero p { max-width: 60ch; margin: 0 0 1rem; }
 .hero .actions { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 1.5rem; }
 
@@ -268,10 +270,10 @@ section { padding-block: var(--section-gap) 0; }
 .tl-date { font-size: 0.9rem; color: var(--muted); white-space: nowrap; }
 .tl-org {
     font-family: var(--font-display);
-    color: var(--accent);
+    color: var(--accent-text);
     margin: 0.15rem 0 0.75rem;
 }
-@media (prefers-color-scheme: dark) { .tl-org { color: var(--accent-hover); } }
+
 .tl-item ul { margin: 0; padding-left: 1.1rem; }
 .tl-item ul li { margin-bottom: 0.4rem; }
 .tl-item ul li::marker { color: var(--accent); }
@@ -358,13 +360,12 @@ section { padding-block: var(--section-gap) 0; }
 @media (min-width: 640px) {
     .pub { grid-template-columns: 180px minmax(0, 1fr); gap: 2.25rem; }
 }
-.pub-image { position: relative; max-width: 180px; margin-right: 0.6rem; }
+.pub-image { position: relative; width: fit-content; margin-right: 0.6rem; }
 .pub-image img {
     border-radius: 8px;
-    width: 100%;
+    width: auto;
+    max-width: 180px;
     max-height: 240px;
-    object-fit: contain;
-    background-color: var(--surface);
 }
 .pub-image::before {
     content: '';
@@ -384,7 +385,7 @@ section { padding-block: var(--section-gap) 0; }
 }
 .pub-text h3 { font-size: 1.25rem; margin-bottom: 0.4rem; }
 .pub-text p:not(.pub-meta) { margin: 0; max-width: 65ch; }
-.pub-link { display: inline-block; margin-top: 0.5rem; color: var(--accent); font-family: var(--font-display); }
+.pub-link { display: inline-block; margin-top: 0.5rem; color: var(--accent-text); font-family: var(--font-display); }
 
 /* ---------- Contact ---------- */
 .contact {
@@ -407,11 +408,13 @@ section { padding-block: var(--section-gap) 0; }
     padding: 1.5rem 1rem;
 }
 .item-contact img {
-    height: 48px;
-    width: 48px;
+    height: 52px;
+    width: 52px;
     object-fit: contain;
     margin: 0 auto 0.75rem;
-    border-radius: 10px;
+    border-radius: 12px;
+    padding: 6px;
+    background-color: #fff; /* keeps the black GitHub mark visible on mauve */
 }
 .item-contact h3 { font-size: 1.2rem; margin-bottom: 0.2rem; }
 .contact-detail {
